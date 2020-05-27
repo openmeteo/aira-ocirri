@@ -1,0 +1,26 @@
+{% extends "aira/base/main-default.html" %}
+{% load static %}
+{% load i18n %}
+
+
+{% block favicon %}
+  <link rel="shortcut icon" type="image/png" href="{% static 'img/logo_olive_culture_square.png' %}" />
+{% endblock %}
+
+
+{% block extratitle %} — IRMASYS{% endblock %}
+
+
+{% block footer %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-xs-4">
+        <img class="img-responsive" src="{% static 'img/logo_olive_culture_eu.png' %}" alt="INTERREG" width="300" height="83">
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+  </div>
+{% endblock %}
