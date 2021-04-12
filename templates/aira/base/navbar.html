@@ -3,8 +3,13 @@
 {% load i18n %}
 
 
+{% block navbar_styles %}
+  navbar-dark bg-dark
+{% endblock %}
+
+
 {% block navbar_brand %}
-  <a style="max-width:78px; margin-top: -13px;" class="navbar-brand" href="{% url 'welcome' %}">
+  <a style="max-width:78px; margin-top: -13px;" class="navbar-brand" href="{% url 'frontpage' %}">
     <img src="{% static 'img/logo_olive_culture.png' %}" width="31" height="45">
   </a>
 {% endblock %}
